@@ -39,7 +39,7 @@
 /***********************************************/
 // WAIT_DIE, NO_WAIT, DL_DETECT, TIMESTAMP, MVCC, HEKATON, HSTORE, OCC, VLL, TICTOC, SILO
 // TODO TIMESTAMP does not work at this moment
-#define CC_ALG 					HEKATON	
+#define CC_ALG 						TICTOC
 #define ISOLATION_LEVEL 			SERIALIZABLE
 
 // all transactions acquire tuples according to the primary key order.
@@ -121,7 +121,7 @@
 #define SCAN_PERC 					0
 #define SCAN_LEN					20
 #define PART_PER_TXN 				1
-#define PERC_MULTI_PART				1
+#define PERC_MULTI_PART				0
 #define REQ_PER_QUERY				16
 #define FIELD_PER_TUPLE				10
 // ==== [TPCC] ====
